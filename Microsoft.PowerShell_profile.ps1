@@ -9,7 +9,7 @@ function RenameFiles {
     )
 
     Set-Location -Path $directory
-    $scriptPath = "C:\Users\Anurag\Documents\WindowsPowerShell\noob.ps1"
+    $scriptPath = "C:\Users\$user\Documents\WindowsPowerShell\noob.ps1"
     & $scriptPath -folderPath $directory `
                   -removeSpaces:$RemoveSpaces `
                   -removeUnderscores:$RemoveUnderscores `
@@ -29,7 +29,7 @@ function RenameFilesGUI {
     )
 
     Set-Location -Path $directory
-    $scriptPath = "C:\Users\Anurag\Documents\WindowsPowerShell\noob_gui.ps1"
+    $scriptPath = "C:\Users\$user\Documents\WindowsPowerShell\noob_gui.ps1"
     & $scriptPath -folderPath $directory `
                   -removeSpaces:$RemoveSpaces `
                   -removeUnderscores:$RemoveUnderscores `
