@@ -1,0 +1,38 @@
+Step-by-Step Installation Guide
+
+>> Save Your PowerShell Script:
+
+>> Save your PowerShell script (let's call it noob.ps1) in a directory of your choice. For example, you can save it in C:\Users\( Your Username )\Documents\WindowsPowerShell\
+
+>> Open PowerShell:
+
+>> Open PowerShell with administrative privileges if necessary (depending on where you plan to place your script).
+
+>> Create a PowerShell Profile (if not already created):
+
+>> Check if you have a PowerShell profile by running:
+## Test-Path $PROFILE
+
+>>If it returns False, create a new profile:
+New-Item -Type File -Force $PROFILE
+
+>>Edit the PowerShell Profile: Open your PowerShell profile in a text editor, You can open it with Notepad using:
+## notepad $PROFILE
+
+>> Activation :
+Ensure to replace "C:\Users\Anurag\Documents\WindowsPowerShell\noob.ps1" with the actual path where your noob.ps1 script is located.
+
+>>Save and Close Your PowerShell Profile & Editor :
+
+>> Reload Your PowerShell Profile: To load your updated profile, either restart PowerShell or run:
+##. $PROFILE
+
+>> Example Usage: Go To Any Directory Right Click & Select Open In Terminal
+## enter   rf
+
+Password - Noob@SS
+
+>> if Facing Policy Issue then 
+## Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+## Set-ExecutionPolicy -Scope LocalMachine RemoteSigned
+## Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
